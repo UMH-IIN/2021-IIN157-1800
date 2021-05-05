@@ -50,3 +50,22 @@ function suma(){
         console.log(stop);
     }
 }
+
+function cargarFormulario(){
+
+    document.getElementById("formulario").innerHTML =   '<h4 class="card-title">Registrar usuario</h4> '+
+    '<form>'+
+    '<div class="form-row"> '+
+    '    <label for="txtcorreo" id="lblcorreo">Correo electronico</label> '+
+    '    <input type="text"   id="txtcorreo" name="txtcorreo" class="form-control" placeholder="algo@gmail.com">  '+
+    '</div><br>'+
+    '<div class="form-row"> '+
+        '    <label >Nombres</label><input type="text" id="txtnombres" name="txtnombres" class="form-control" placeholder="Tu nombre">  '+
+        '</div>'+
+        '<div class="form-group">'+
+    '    <label >Apellidos</label><input type="text" id="txtapellidos" name="txtapellidos" class="form-control">'+
+    '</div> '+ 
+    '<button class="btn btn-success" > Registrar</button> '+
+    "</form> ";
+
+}
