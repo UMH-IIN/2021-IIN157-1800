@@ -20,10 +20,22 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">  
-        <Persona 
-            personaInfo ={o_persona}
-            fnsaludar = {f_saludar}
-        />   
+      <Persona 
+          nombre   ="Juan"
+          apellido ="Perez"
+          edad     ="45"
+          nacionalidad = "Hondureña"
+          genero      = "M"
+          fnsaludar = {f_saludar}
+      /> 
+      <Persona 
+          personaInfo ={o_persona}
+          fnsaludar = {f_saludar}
+      />   
+
+      <Persona  
+          fnsaludar = {f_saludar}
+      />   
       </header>  
     </div>
   );
